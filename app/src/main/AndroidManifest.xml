@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="dvs606.my222au.assignment1"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainList">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="dv606.my222au.assignment1.RandomActivity" android:label="Random" android:parentActivityName=".MainList"/>
+        <activity android:name="dv606.my222au.assignment1.Bmi" android:label="Bmi" android:parentActivityName=".MainList"/>
+        <activity android:name="dv606.my222au.assignment1.CountryActivity" android:label="my Countries" android:parentActivityName=".MainList"/>
+        <activity android:name="dv606.my222au.assignment1.AddCountry" android:label="Add country" android:parentActivityName="dv606.my222au.assignment1.CountryActivity"/>
+        <activity android:name="dv606.my222au.assignment1.VaxjoWeather" android:label="Vaxjo Weather"/>
+        <activity android:name="dv606.my222au.assignment1.BeerPager" android:label="Beer Pager" android:parentActivityName=".MainList"/>
+
+    </application>
+
+</manifest>
